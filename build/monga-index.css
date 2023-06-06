@@ -182,31 +182,7 @@ a {
   height: 100%;
   object-fit: contain;
 }
-.title {
-  font-weight: 500;
-}
-.title--md {
-  font-size: 2rem;
-  margin-bottom: 1.75rem;
-}
-.title--lg {
-  font-size: 2.5rem;
-  margin-bottom: 1.75rem;
-}
-.title--xl {
-  font-size: 3rem;
-  margin-bottom: 1.75rem;
-}
-.title--uppercase {
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 1.25rem;
-}
-.title--testimonial {
-  margin-bottom: 2.25rem;
-}
+
 .hero__subheader {
   font-size: 1.25rem;
   font-weight: 400;
@@ -375,13 +351,7 @@ a {
   color: var(--darklight);
 }
 /* Growth style */
-.section-block--xl {
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 .titles-wrapper {
   display: flex;
   flex-direction: column;
@@ -425,6 +395,15 @@ a {
 .growth__card-descr {
   font-size: 1rem;
   font-weight: 400;
+}
+/* CTA style */
+.cta {
+  color: var(--white);
+  background-color: var(--dark);
+  background-blend-mode: screen;
+  background-position: 6rem;
+  background-size: 120%;
+  background-repeat: repeat;
 }
 /* Footer style */
 .footer {

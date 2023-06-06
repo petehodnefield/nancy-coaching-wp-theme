@@ -95,6 +95,22 @@
         </div>
     </div>
 </section>
+
+<!-- CTA section -->
+<section class="section-block--lg cta"
+    style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);">
+    <div>
+        <h2 class="title--xl">Ready to level up your career?</h2>
+        <h3 class="title--24">Get access to my free career guide and start becoming your best self</h3>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+            <button class="btn btn--primary btn--large" type="submit">Download</button>
+        </form>
+    </div>
+</section>
 <div class="full-width-split group">
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
@@ -186,11 +202,10 @@
     </div>
 </div>
 
-<div class="hero-slider">
+<!-- <div class="hero-slider">
     <div data-glide-el="track" class="glide__track">
         <div class="glide__slides">
-            <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg'); ?>);">
+            <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg'); ?>);">
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
                         <h2 class="headline headline--medium t-center">Free Transportation</h2>
@@ -199,8 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg'); ?>);">
+            <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg'); ?>);">
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
                         <h2 class="headline headline--medium t-center">An Apple a Day</h2>
@@ -209,8 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-slider__slide"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg'); ?>);">
+            <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg'); ?>);">
                 <div class="hero-slider__interior container">
                     <div class="hero-slider__overlay">
                         <h2 class="headline headline--medium t-center">Free Food</h2>
@@ -223,7 +236,7 @@
         <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
         </div>
     </div>
-</div>
+</div> -->
 
 <?php get_footer();
 
