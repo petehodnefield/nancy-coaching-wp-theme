@@ -16,6 +16,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
 }
 
 /* Sections
@@ -414,6 +415,12 @@ template {
 }
 
 .btn--large {
+  font-size: 1rem;
+  font-weight: 600;
+  height: 3rem;
+  max-width: 11.25rem;
+}
+.btn--xl {
   font-size: 1rem;
   font-weight: 600;
   height: 3rem;
