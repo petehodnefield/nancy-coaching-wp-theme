@@ -38,6 +38,28 @@
         </div>
     </div>
 </section>
+
+<!-- Testimonials section -->
+<section class="testimonials">
+    <div class="testimonials__title-wrapper">
+        <h2 class="title title--uppercase">Testimonials</h2>
+        <h3 class="title title--lg title--testimonial">Hear from my students</h2>
+    </div>
+
+    <div class="testimonial__card">
+        <div class="testimonial__img-wrapper">
+            <img class="testimonial__img" src="<?php echo get_theme_file_uri('/images/testimonial-image.png') ?>" alt="A woman with hoop earrings smiling at the camera.">
+        </div>
+        <p class="testimonial__text">"Working with Nancy Hodnefield has been an absolute game-changer! Her insightful
+            guidance and unwavering
+            support have empowered me to overcome my fears and achieve remarkable personal growth. Nancy's coaching has
+            truly transformed my life, and I couldn't be more grateful for her expertise and dedication."
+        </p>
+        <p class="testimonial__name">
+            ~ Sarah Thompson
+        </p>
+    </div>
+</section>
 <div class="full-width-split group">
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
