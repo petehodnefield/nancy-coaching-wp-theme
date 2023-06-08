@@ -16,3 +16,12 @@ function nancy_features()
     add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'nancy_features');
+
+function nancy_adjust_queries($query)
+{
+    if (!is_admin() and is_post_type_archive('event') and $query->is_main_query()) {
+        $query->set();
+    }
+}
+
+add_action('pre_get_posts', 'nancy_adjust_queries');

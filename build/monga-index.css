@@ -1,5 +1,5 @@
 *:root {
-  --primary: #156f62;
+  --primary: #1e3a41;
   --white: #ffffff;
   --dark: #2c2c2c;
   --darklight: #525252;
@@ -188,18 +188,38 @@ a {
   font-weight: 400;
   margin-bottom: 2rem;
 }
+.page-banner {
+  height: 2500px;
+  max-height: 250px;
+  background-color: var(--primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-banner__bg-img {
+  position: absolute;
+  height: 300px;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 2;
+  width: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+  background-blend-mode: screen;
+  background-color: var(--dark);
+}
 .page-banner__title {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  font-size: 3.6rem;
+  font-weight: 600;
+  font-size: 3rem;
   margin: 0 0 1rem 0;
-  color: #fff;
+  color: var(--white);
+  z-index: 4;
+  max-width: 1000px;
+  text-align: center;
 }
-@media (min-width: 530px) {
-  .page-banner__title {
-    font-size: 5rem;
-  }
-}
+
 .hero__bg-image {
   background-size: cover;
   height: 100%;

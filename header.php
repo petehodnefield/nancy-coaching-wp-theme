@@ -14,29 +14,33 @@
         <h2 class="logo">
             <a class="logo__a" href="<?php echo site_url('/') ?>"><?php echo $siteTitle; ?></a>
         </h2>
-        <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search"
-                aria-hidden="true"></i></span>
+        <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li" <?php
-                                        if (is_page('home') or wp_get_post_parent_id(0) === 22) echo 'class="nav__selected"'
-                                        ?>>
+                                    if (is_page('home') or wp_get_post_parent_id(0) === 22) echo 'class="nav__selected"'
+                                    ?>>
                     <a class="nav__a" href="<?php echo site_url('/') ?>">Home</a>
                 </li>
                 <li class="nav__li" <?php
-                                        if (is_page('about') or wp_get_post_parent_id(0) === 5) echo 'class="nav__selected"'
-                                        ?>>
+                                    if (is_page('about') or wp_get_post_parent_id(0) === 5) echo 'class="nav__selected"'
+                                    ?>>
                     <a class="nav__a" href="<?php echo site_url('/about') ?>">About</a>
                 </li>
                 <li class="nav__li" <?php
-                                        if (is_page('coaching') or wp_get_post_parent_id(0) === 14) echo 'class="nav__selected"'
-                                        ?>>
+                                    if (is_page('coaching') or wp_get_post_parent_id(0) === 14) echo 'class="nav__selected"'
+                                    ?>>
                     <a class="nav__a" href="<?php echo site_url('/coaching') ?>">Coaching</a>
                 </li>
                 <li class="nav__li" <?php
-                                        if (is_page('contact') or wp_get_post_parent_id(0) === 16) echo 'class="nav__selected"'
-                                        ?>>
+                                    if (is_page('contact') or wp_get_post_parent_id(0) === 16) echo 'class="nav__selected"'
+                                    ?>>
                     <a class="nav__a" href="<?php echo site_url('/contact') ?>">Contact</a>
+                </li>
+                <li class="nav__li" <?php
+                                    if (is_page('blog') or wp_get_post_parent_id(0) === 16) echo 'class="nav__selected"'
+                                    ?>>
+                    <a class="nav__a" href="<?php echo site_url('/blog') ?>">Blog</a>
                 </li>
 
             </ul>
