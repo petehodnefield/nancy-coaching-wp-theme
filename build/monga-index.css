@@ -425,6 +425,22 @@ a {
   background-size: 120%;
   background-repeat: repeat;
 }
+
+/* Blog snippet style */
+.blog-snip {
+  display: flex;
+  background-color: var(--primary);
+}
+.blog-snip__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  box-shadow: var(--bs1);
+  padding: 3rem;
+  border-radius: 1rem;
+}
 /* Footer style */
 .footer {
   background-color: var(--dark);
