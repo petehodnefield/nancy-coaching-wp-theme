@@ -217,16 +217,44 @@ a {
 /* Hero style */
 .hero {
   position: relative;
-  height: 600px;
 }
+.hero__bg-image {
+  background-position: 0% 40%;
+  background-size: 120%;
+  max-height: 600px;
 
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hero__content-wrapper {
+  width: 100%;
+  max-width: 70rem;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  align-items: center;
+  padding-left: 6rem;
+}
+@media screen and (max-width: 1080px) {
+  .hero__content-wrapper {
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__content-wrapper {
+    justify-content: center;
+    padding: 2rem;
+  }
+}
 .hero__content {
-  position: absolute;
-  z-index: 2;
-  left: 20vw;
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  background-color: rgb(255, 255, 255, 0.9);
   border-radius: 0.5rem;
   color: var(--dark);
   padding: 3rem;
@@ -236,13 +264,21 @@ a {
 @media screen and (max-width: 1080px) {
   .hero__content {
     left: 10vw;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__content {
+    max-width: 100%;
   }
 }
 .hero__signature-wrapper {
   height: 2rem;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .hero__signature {
   height: 100%;
@@ -251,8 +287,9 @@ a {
 
 .hero__subheader {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 .page-banner {
   height: 2500px;
@@ -286,12 +323,6 @@ a {
   text-align: center;
 }
 
-.hero__bg-image {
-  background-size: cover;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
 .page-banner__intro {
   font-weight: 300;
   font-size: 1.2rem;

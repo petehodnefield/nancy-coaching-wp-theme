@@ -21,6 +21,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
 /* Titles */
 .title {
   font-weight: 500;
@@ -34,7 +41,7 @@ body {
 }
 .title--lg {
   font-size: 2.5rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 .title--xl {
   font-size: 3rem;
@@ -49,6 +56,9 @@ body {
 }
 .title--testimonial {
   margin-bottom: 2.25rem;
+}
+.title--primary {
+  color: var(--primary);
 }
 /* Buttons */
 .btn {
@@ -65,6 +75,7 @@ body {
   max-width: 11.25rem;
 }
 .btn--xl {
+  width: 100%;
   font-size: 1rem;
   font-weight: 600;
   height: 3rem;

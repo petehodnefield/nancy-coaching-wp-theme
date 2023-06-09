@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <!-- Hero section -->
-<div class="hero">
-    <div class="hero__bg-image"
-        style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);">
+<div class="hero hero__bg-image"
+    style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);">
+    <div class="hero__content-wrapper">
         <div class="hero__content">
             <div class="hero__signature-wrapper"><img class="hero__signature"
                     src="<?php echo get_theme_file_uri('/images/signature.png') ?>" />
             </div>
-            <h1 class="title title--lg">Elevate Your Career with Confidence</h1>
+            <h1 class="title title--lg title--primary">Elevate Your Career with Confidence</h1>
             <h2 class="hero__subheader">Guiding Ambitious Young Women to Success</h2>
             <a class="btn btn--xl btn--primary rounded" href="#">Ignite Your Potential Now</a>
         </div>
