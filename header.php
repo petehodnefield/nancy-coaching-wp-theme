@@ -45,15 +45,15 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__icons-wrapper">
-                <a href="#" class="header__icon-wrapper">
-                    <i class="fa-brands fa-instagram header__icon"></i>
+            <div class="social__icons-wrapper social__icons-wrapper--header">
+                <a href="#" class="social__icon-wrapper social__icon-wrapper--outline">
+                    <i class="fa-brands fa-instagram social__icon"></i>
                 </a>
-                <a href="#" class="header__icon-wrapper">
-                    <i class="fa-brands fa-facebook-f header__icon"></i>
+                <a href="#" class="social__icon-wrapper social__icon-wrapper--outline">
+                    <i class="fa-brands fa-facebook-f social__icon"></i>
                 </a>
-                <a href="#" class="header__icon-wrapper">
-                    <i class="fa-brands fa-linkedin-in header__icon"></i>
+                <a href="#" class="social__icon-wrapper social__icon-wrapper--outline">
+                    <i class="fa-brands fa-linkedin-in social__icon"></i>
                 </a>
             </div>
         </div>
