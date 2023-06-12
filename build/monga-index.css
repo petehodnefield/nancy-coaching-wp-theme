@@ -618,6 +618,11 @@ a {
   padding: 3rem;
   border-radius: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .blog-snip__content {
+    padding: 2rem 1.5rem;
+  }
+}
 /* Footer style */
 .footer {
   background-color: var(--primary);

@@ -102,7 +102,7 @@
     </div>
 </section>
 
-<section class="section-block--lg blog-snip">
+<section class="section-block--xl blog-snip">
     <div class="blog-snip__content">
         <h2 class="title--lg">From Our Blog</h2>
         <?php

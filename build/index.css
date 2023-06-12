@@ -14,6 +14,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1080px) {
+  .section-block--lg {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-block--lg {
+    height: unset;
+    padding: 4rem 2rem;
+  }
+}
 .section-block--xl {
   height: 800px;
   display: flex;
@@ -54,6 +65,7 @@ h5 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
+
 .title--xl {
   font-size: 3rem;
   margin-bottom: 1.75rem;
@@ -71,6 +83,12 @@ h5 {
 }
 .title--primary {
   color: var(--primary);
+}
+@media screen and (max-width: 768px) {
+  .title,
+  .title--lg {
+    text-align: center;
+  }
 }
 /* Buttons */
 .btn {

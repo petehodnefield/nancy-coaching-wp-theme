@@ -1034,6 +1034,14 @@ body.admin-bar .search-overlay {
   box-sizing: border-box;
   gap: 1rem;
 }
+@media screen and (max-width: 1080px) {
+  .event-summary {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .event-summary__title a {
   color: #173f58;
 }
@@ -1055,6 +1063,11 @@ body.admin-bar .search-overlay {
   line-height: 1;
   transition: opacity 0.33s;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+}
+@media screen and (max-width: 1080px) {
+  .event-summary__date {
+    border-radius: 0.25rem;
+  }
 }
 .event-summary__content {
   max-width: 660px;
