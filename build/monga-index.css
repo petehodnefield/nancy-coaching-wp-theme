@@ -547,7 +547,8 @@ a {
   cursor: pointer;
 }
 .growth__card:hover {
-  opacity: 0.8;
+  opacity: 0.95;
+  transition: 200ms ease-in-out;
 }
 .growth__card-content {
   background-color: rgba(44, 44, 44, 0.85);
@@ -559,17 +560,38 @@ a {
   align-items: start;
   justify-content: center;
   width: 100%;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
+  height: 40%;
   box-shadow: var(--bs1);
+}
+.growth__card-content:hover {
+  background-color: rgba(44, 44, 44, 1);
+  transition: 200ms ease-in-out;
+}
+@media screen and (max-width: 1080px) {
+  .growth__card-content {
+    height: 100%;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .growth__cards-wrapper {
+    flex-direction: column;
+  }
 }
 .growth__card-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
-.growth__card-descr {
+
+.growth__card-desc {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0;
 }
 /* CTA style */
 .cta {
