@@ -456,6 +456,12 @@ a {
   z-index: 2;
   background-color: var(--white);
 }
+@media screen and (max-width: 500px) {
+  .home-about__content {
+    padding: 1.5rem;
+    align-items: center;
+  }
+}
 .home-about__text {
   font-size: 1.125rem;
   font-weight: 400;
