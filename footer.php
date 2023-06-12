@@ -18,16 +18,14 @@
                     <a class="footer__link footer__link--lg" href="/">Home</a>
                 </li>
                 <li>
-                    <a class="footer__link footer__link--lg" href="/">About</a>
+                    <a class="footer__link footer__link--lg" href="/about">About</a>
                 </li>
                 <li>
-                    <a class="footer__link footer__link--lg" href="/">Coaching</a>
+                    <a class="footer__link footer__link--lg" href="/coaching">Coaching</a>
                 </li>
+
                 <li>
-                    <a class="footer__link footer__link--lg" href="/">Testimonials</a>
-                </li>
-                <li>
-                    <a class="footer__link footer__link--lg" href="/">Get in touch</a>
+                    <a class="footer__link footer__link--lg" href="/contact">Get in touch</a>
                 </li>
             </ul>
         </div>
