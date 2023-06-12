@@ -3,6 +3,7 @@
   --white: #ffffff;
   --dark: #2c2c2c;
   --darklight: #525252;
+  --glass: rgba(255, 255, 255, 0.8);
 }
 ul {
   list-style: none;
@@ -376,18 +377,70 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1080px) {
+  .home-about {
+    height: unset;
+    padding: 3rem 0;
+  }
+}
 .home-about-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 70rem;
   width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1280px) {
+  .home-about-content {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .home-about-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
 }
 .home-about__img-wrapper {
-  width: 614px;
-  height: 447px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 667px;
+  height: 500px;
+}
+@media screen and (max-width: 1280px) {
+  .home-about__img-wrapper {
+    left: 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .home-about__img-wrapper {
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    aspect-ratio: 10 / 2;
+    height: unset;
+    width: 40rem;
+    margin: 0;
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-about__img-wrapper {
+    width: 100%;
+  }
 }
 .home-about__img {
   object-fit: cover;
+  object-position: 80%;
   height: 100%;
   width: 100%;
   border-radius: 1rem;
@@ -398,10 +451,9 @@ a {
   border-radius: 1rem;
   padding: 3rem;
   box-shadow: var(--bs1);
-  max-width: 729px;
+  max-width: 40rem;
   position: relative;
   z-index: 2;
-  right: 0;
   background-color: var(--white);
 }
 .home-about__text {
@@ -424,6 +476,12 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--white);
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding: 4rem 2rem;
+    height: unset;
+  }
 }
 .testimonials__title-wrapper {
   display: flex;
