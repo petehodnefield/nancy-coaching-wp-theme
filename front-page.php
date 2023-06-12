@@ -138,20 +138,22 @@
                 Blog Posts</a></p>
     </div>
 </section>
-
+<!-- style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);" -->
 <!-- CTA section -->
-<section class="section-block--lg cta"
-    style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);">
-    <div>
-        <h2 class="title--xl">Ready to level up your career?</h2>
-        <h3 class="title--24">Get access to my free career guide and start becoming your best self</h3>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email">
-            <button class="btn btn--primary btn--large" type="submit">Download</button>
-        </form>
+<section class="section-block--lg cta">
+    <img class="cta__img" src="<?php echo get_theme_file_uri('/images/hero-image.png') ?>" />
+    <div class="cta__container">
+        <div class="cta__content">
+            <h2 class="title--xl">Ready to level up your career?</h2>
+            <h3 class="title--24">Get access to my free career guide and start becoming your best self</h3>
+            <form id="homeContactForm" class="hform">
+                <label class="hform__label" for="name">Name</label>
+                <input placeholder="Name" class="hform__input" type="text" name="name" id="name">
+                <label class="hform__label" for="email">Email Address</label>
+                <input placeholder="Email" class="hform__input" type="email" name="email" id="email">
+                <button class="btn btn--primary btn--large btn--submit rounded" type="submit">Download</button>
+            </form>
+        </div>
     </div>
 </section>
 <!-- <div class="full-width-split group">
