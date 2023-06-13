@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
+
 <!-- Hero section -->
-<div class="hero hero__bg-image"
-    style="background-image: url(<?php echo get_theme_file_uri('/images/hero-image.png') ?>);">
-    <div class="hero__content-wrapper">
+<div class="hero ">
+    <img class="hero__bg-image" src="<?php echo get_theme_file_uri('/images/hero-image.png') ?>" alt="A woman smiling at the camera in a room full of plants and sunlight.">
+    <div class=" hero__content-wrapper">
         <div class="hero__content">
-            <div class="hero__signature-wrapper"><img class="hero__signature"
-                    src="<?php echo get_theme_file_uri('/images/signature.png') ?>" />
+            <div class="hero__signature-wrapper"><img class="hero__signature" src="<?php echo get_theme_file_uri('/images/signature.png') ?>" />
             </div>
             <h1 class="title title--lg title--primary">Elevate Your Career with Confidence</h1>
             <h2 class="hero__subheader">Guiding Ambitious Young Women to Success</h2>
@@ -19,8 +19,7 @@
     <div class="home-about-content">
         <!-- About image -->
         <div class="home-about__img-wrapper">
-            <img class="home-about__img" src="<?php echo get_theme_file_uri('/images/about.png') ?>"
-                alt="Nancy sitting in her office full of plants smiling at the camera.">
+            <img class="home-about__img" src="<?php echo get_theme_file_uri('/images/about.png') ?>" alt="Nancy sitting in her office full of plants smiling at the camera.">
         </div>
         <div class="home-about__content">
             <h2 class="title title--md">Hi, I'm Nancy </h2>
@@ -51,8 +50,7 @@
 
     <div class="testimonial__card">
         <div class="testimonial__img-wrapper">
-            <img class="testimonial__img" src="<?php echo get_theme_file_uri('/images/testimonial-image.png') ?>"
-                alt="A woman with hoop earrings smiling at the camera.">
+            <img class="testimonial__img" src="<?php echo get_theme_file_uri('/images/testimonial-image.png') ?>" alt="A woman with hoop earrings smiling at the camera.">
         </div>
         <p class="testimonial__text">"Working with Nancy Hodnefield has been an absolute game-changer! Her insightful
             guidance and unwavering
@@ -73,8 +71,7 @@
     </div>
     <div class="growth__cards-wrapper">
         <a href="/coaching">
-            <div class="growth__card"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/leadership.jpg') ?>);">
+            <div class="growth__card" style="background-image: url(<?php echo get_theme_file_uri('/images/leadership.jpg') ?>);">
                 <div class="growth__card-content">
                     <h3 class="growth__card-title">Leadership Excellence</h3>
                     <p class="growth__card-desc">Develop exceptional leadership skills for greater impact.</p>
@@ -82,8 +79,7 @@
             </div>
         </a>
         <a href="/coaching">
-            <div class="growth__card"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/career-success.jpg') ?>);">
+            <div class="growth__card" style="background-image: url(<?php echo get_theme_file_uri('/images/career-success.jpg') ?>);">
                 <div class="growth__card-content">
                     <h3 class="growth__card-title">Career Success Blueprint</h3>
                     <p class="growth__card-desc">Unlock your career potential and thrive professionally.</p>
@@ -91,8 +87,7 @@
             </div>
         </a>
         <a href="/coaching">
-            <div class="growth__card"
-                style="background-image: url(<?php echo get_theme_file_uri('/images/transform.jpg') ?>);">
+            <div class="growth__card" style="background-image: url(<?php echo get_theme_file_uri('/images/transform.jpg') ?>);">
                 <div class="growth__card-content">
                     <h3 class="growth__card-title">Transform Your Life</h3>
                     <p class="growth__card-desc">Experience profound personal growth and achieve your dreams.</p>
@@ -112,20 +107,20 @@
 
         while ($homepagePosts->have_posts()) {
             $homepagePosts->the_post(); ?>
-        <div class="event-summary">
-            <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
-                <span class="event-summary__month"><?php the_time('M'); ?></span>
-                <span class="event-summary__day"><?php the_time('d'); ?></span>
-            </a>
-            <div class="event-summary__content">
-                <h5 class="event-summary__title "><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                <p><?php if (has_excerpt()) {
+            <div class="event-summary">
+                <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
+                    <span class="event-summary__month"><?php the_time('M'); ?></span>
+                    <span class="event-summary__day"><?php the_time('d'); ?></span>
+                </a>
+                <div class="event-summary__content">
+                    <h5 class="event-summary__title "><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <p><?php if (has_excerpt()) {
                             echo get_the_excerpt();
                         } else {
                             echo wp_trim_words(get_the_content(), 18);
                         } ?> <a href="<?php the_permalink(); ?>" class="nu gray">Read more</a></p>
+                </div>
             </div>
-        </div>
         <?php }
         wp_reset_postdata();
         ?>
@@ -133,8 +128,7 @@
 
 
 
-        <p class="t-center no-margin event-summary__all-posts"><a href="<?php echo site_url('/blog'); ?>"
-                class="btn btn--yellow">View All
+        <p class="t-center no-margin event-summary__all-posts"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">View All
                 Blog Posts</a></p>
     </div>
 </section>

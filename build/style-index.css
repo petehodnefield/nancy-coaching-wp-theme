@@ -672,9 +672,10 @@ body.login {
 }
 .main-navigation a {
   display: block;
-  color: var(--dark);
+  color: var(--white);
   text-decoration: none;
   font-weight: 400;
+  margin-bottom: 0.25rem;
 }
 @media (min-width: 960px) {
   .main-navigation a {

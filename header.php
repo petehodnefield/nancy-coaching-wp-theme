@@ -15,8 +15,86 @@
             <h2 class="logo">
                 <a class="logo__a" href="<?php echo site_url('/') ?>"><?php echo $siteTitle; ?></a>
             </h2>
-            <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search"
-                    aria-hidden="true"></i></span>
+            <i class="site-header__menu-trigger fa-solid fa-bars" aria-hidden="true"></i>
+            <div class="site-header__menu group">
+                <nav class="main-navigation">
+                    <ul class="nav__ul nav__hamburger">
+                        <li class="nav__li" <?php
+                                            if (is_page('home') or wp_get_post_parent_id(0) === 22) echo 'class="nav__selected"'
+                                            ?>>
+                            <a class="nav__a" href="<?php echo site_url('/') ?>">
+                                <?php
+                                if (is_page('home') or wp_get_post_parent_id(0) === 22) { ?>
+                                    •Home
+                                <?php } else { ?>
+                                    Home
+                                <? }
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav__li" <?php
+                                            if (is_page('about') or wp_get_post_parent_id(0) === 5) echo 'class="nav__selected"'
+                                            ?>>
+                            <a class="nav__a" href="<?php echo site_url('/about') ?>">
+                                <?php
+                                if (is_page('about') or wp_get_post_parent_id(0) === 22) { ?>
+                                    •About
+                                <?php } else { ?>
+                                    About
+                                <? }
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav__li" <?php
+                                            if (is_page('coaching') or wp_get_post_parent_id(0) === 14) echo 'class="nav__selected"'
+                                            ?>>
+                            <a class="nav__a" href="<?php echo site_url('/coaching') ?>">
+                                <?php
+                                if (is_page('coaching') or wp_get_post_parent_id(0) === 22) { ?>
+                                    •Coaching
+                                <?php } else { ?>
+                                    Coaching
+                                <? }
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav__li" <?php
+                                            if (is_page('contact') or wp_get_post_parent_id(0) === 16) echo 'class="nav__selected"'
+                                            ?>>
+                            <a class="nav__a" href="<?php echo site_url('/contact') ?>">
+                                <?php
+                                if (is_page('contact') or wp_get_post_parent_id(0) === 22) { ?>
+                                    •Contact
+                                <?php } else { ?>
+                                    Contact
+                                <? }
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav__li" <?php
+                                            if (is_page('blog') or wp_get_post_parent_id(0) === 31) echo 'class="nav__selected"'
+                                            ?>>
+                            <a class="nav__a" href="<?php echo site_url('/blog') ?>">
+                                <?php
+                                if (is_page('blog') or wp_get_post_parent_id(0) === 31) { ?>
+                                    •Blog
+                                <?php } else { ?>
+                                    Blog
+                                <? }
+                                ?>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+            </div> -->
+            <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search"
+                    aria-hidden="true"></i></span> -->
             <nav class="nav">
                 <ul class="nav__ul">
                     <li class="nav__li" <?php
@@ -25,9 +103,9 @@
                         <a class="nav__a" href="<?php echo site_url('/') ?>">
                             <?php
                             if (is_page('home') or wp_get_post_parent_id(0) === 22) { ?>
-                            •Home
+                                •Home
                             <?php } else { ?>
-                            Home
+                                Home
                             <? }
                             ?>
                         </a>
@@ -38,9 +116,9 @@
                         <a class="nav__a" href="<?php echo site_url('/about') ?>">
                             <?php
                             if (is_page('about') or wp_get_post_parent_id(0) === 22) { ?>
-                            •About
+                                •About
                             <?php } else { ?>
-                            About
+                                About
                             <? }
                             ?>
                         </a>
@@ -51,9 +129,9 @@
                         <a class="nav__a" href="<?php echo site_url('/coaching') ?>">
                             <?php
                             if (is_page('coaching') or wp_get_post_parent_id(0) === 22) { ?>
-                            •Coaching
+                                •Coaching
                             <?php } else { ?>
-                            Coaching
+                                Coaching
                             <? }
                             ?>
                         </a>
@@ -64,9 +142,9 @@
                         <a class="nav__a" href="<?php echo site_url('/contact') ?>">
                             <?php
                             if (is_page('contact') or wp_get_post_parent_id(0) === 22) { ?>
-                            •Contact
+                                •Contact
                             <?php } else { ?>
-                            Contact
+                                Contact
                             <? }
                             ?>
                         </a>
@@ -77,9 +155,9 @@
                         <a class="nav__a" href="<?php echo site_url('/blog') ?>">
                             <?php
                             if (is_page('blog') or wp_get_post_parent_id(0) === 31) { ?>
-                            •Blog
+                                •Blog
                             <?php } else { ?>
-                            Blog
+                                Blog
                             <? }
                             ?>
                         </a>
