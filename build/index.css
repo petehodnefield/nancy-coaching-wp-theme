@@ -104,6 +104,7 @@ h5 {
 @media screen and (max-width: 500px) {
   .title--uppercase {
     font-size: 1rem;
+    text-align: center;
   }
 }
 .title--testimonial {
