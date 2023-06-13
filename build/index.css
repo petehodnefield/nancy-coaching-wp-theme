@@ -10,6 +10,9 @@ body {
 ::placeholder {
   color: var(--white);
 }
+.max-w-660 {
+  max-width: 660px;
+}
 .section-block--lg {
   height: 600px;
   display: flex;
