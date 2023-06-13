@@ -320,10 +320,7 @@ a {
 .page-banner--contact {
   height: 300px;
 }
-.page-banner--coaching {
-  text-align: center;
-  height: 300px;
-}
+
 @media screen and (max-width: 768px) {
   .page-banner--contact {
     height: unset;
@@ -331,7 +328,18 @@ a {
     padding: 2rem 0;
   }
 }
-
+.page-banner--coaching {
+  text-align: center;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .page-banner--coaching {
+    height: 150px;
+  }
+  .page-banner--coaching h2 {
+    margin: 0;
+  }
+}
 .page-banner__content {
   display: flex;
   flex-direction: column;
@@ -379,6 +387,11 @@ a {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .page-banner__title {
+    margin: 0;
+  }
+}
 .page-banner__text {
   font-size: 1rem;
   font-weight: 400;
@@ -402,6 +415,7 @@ a {
 .page-banner__links-wrapper {
   display: flex;
   gap: 2rem;
+  flex-shrink: 2;
 }
 .page-banner__link-wrapper {
   display: flex;
@@ -411,8 +425,13 @@ a {
   border-radius: 1rem;
   text-align: center;
   padding: 1.5rem;
-  width: 12rem;
+  width: 10rem;
   height: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .page-banner__link-wrapper {
+    display: none;
+  }
 }
 .page-banner__link-wrapper:hover {
   opacity: 0.8;
